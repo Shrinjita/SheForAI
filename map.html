@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Map with OpenStreetMap</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <!-- Leaflet.js library -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script>
+        // Initialize map centered on India
+        const map = L.map('map').setView([20.5937, 78.9629], 5);
+
+        // Load OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Sample data points with markers and popups
+        const locations = [
+            { coords: [28.7041, 77.1025], name: "Delhi" },
+            { coords: [19.0760, 72.8777], name: "Mumbai" },
+            { coords: [13.0827, 80.2707], name: "Chennai" },
+            { coords: [22.5726, 88.3639], name: "Kolkata" }
+        ];
+
+        // Add markers with clickable popups
+        locations.forEach(location => {
+            const marker = L.marker(location.coords).addTo(map);
+            marker.bindPopup(`<h3>${location.name}</h3><p>Sample data about this location.</p>`);
+        });
+    </script>
+</body>
+</html>
