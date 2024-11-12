@@ -1,0 +1,163 @@
+[
+    {
+        "state": "Delhi",
+        "area": "Paharganj",
+        "latitude": 28.6448,
+        "longitude": 77.216721,
+        "safety_score": 45
+    },
+    {
+        "state": "Delhi",
+        "area": "North-East Delhi",
+        "latitude": 28.7041,
+        "longitude": 77.1025,
+        "safety_score": 40
+    },
+    {
+        "state": "Uttar Pradesh",
+        "area": "Meerut",
+        "latitude": 28.9845,
+        "longitude": 77.7064,
+        "safety_score": 50
+    },
+    {
+        "state": "Uttar Pradesh",
+        "area": "Ghaziabad",
+        "latitude": 28.6692,
+        "longitude": 77.4538,
+        "safety_score": 52
+    },
+    {
+        "state": "Maharashtra",
+        "area": "Dharavi, Mumbai",
+        "latitude": 19.0455,
+        "longitude": 72.8654,
+        "safety_score": 48
+    },
+    {
+        "state": "Maharashtra",
+        "area": "Kurla, Mumbai",
+        "latitude": 19.0658,
+        "longitude": 72.8795,
+        "safety_score": 55
+    },
+    {
+        "state": "Tamil Nadu",
+        "area": "North Chennai",
+        "latitude": 13.0904,
+        "longitude": 80.2678,
+        "safety_score": 53
+    },
+    {
+        "state": "Tamil Nadu",
+        "area": "T. Nagar, Chennai",
+        "latitude": 13.0402,
+        "longitude": 80.2337,
+        "safety_score": 60
+    },
+    {
+        "state": "Rajasthan",
+        "area": "Old City, Jaipur",
+        "latitude": 26.9124,
+        "longitude": 75.7873,
+        "safety_score": 58
+    },
+    {
+        "state": "Rajasthan",
+        "area": "Jodhpur outskirts",
+        "latitude": 26.2389,
+        "longitude": 73.0243,
+        "safety_score": 60
+    },
+    {
+        "state": "West Bengal",
+        "area": "Esplanade, Kolkata",
+        "latitude": 22.5667,
+        "longitude": 88.3531,
+        "safety_score": 56
+    },
+    {
+        "state": "West Bengal",
+        "area": "Sealdah, Kolkata",
+        "latitude": 22.5700,
+        "longitude": 88.3639,
+        "safety_score": 54
+    },
+    {
+        "state": "Goa",
+        "area": "Baga Beach",
+        "latitude": 15.5527,
+        "longitude": 73.7517,
+        "safety_score": 57
+    },
+    {
+        "state": "Goa",
+        "area": "Anjuna",
+        "latitude": 15.5873,
+        "longitude": 73.7437,
+        "safety_score": 55
+    },
+    {
+        "state": "Karnataka",
+        "area": "Whitefield, Bangalore",
+        "latitude": 12.9698,
+        "longitude": 77.7500,
+        "safety_score": 59
+    },
+    {
+        "state": "Karnataka",
+        "area": "Koramangala, Bangalore",
+        "latitude": 12.9352,
+        "longitude": 77.6245,
+        "safety_score": 63
+    },
+    {
+        "state": "Punjab",
+        "area": "Amritsar Old City",
+        "latitude": 31.6340,
+        "longitude": 74.8723,
+        "safety_score": 62
+    },
+    {
+        "state": "Haryana",
+        "area": "Gurgaon outskirts",
+        "latitude": 28.4595,
+        "longitude": 77.0266,
+        "safety_score": 61
+    },
+    {
+        "state": "Odisha",
+        "area": "Puri Beach",
+        "latitude": 19.8135,
+        "longitude": 85.8312,
+        "safety_score": 65
+    },
+    {
+        "state": "Assam",
+        "area": "Paltan Bazaar, Guwahati",
+        "latitude": 26.1792,
+        "longitude": 91.7458,
+        "safety_score": 57
+    },
+    {
+        "state": "Bihar",
+        "area": "Patna",
+        "latitude": 25.5941,
+        "longitude": 85.1376,
+        "safety_score": 52
+    },
+    {
+        "state": "Jharkhand",
+        "area": "Ranchi",
+        "latitude": 23.3441,
+        "longitude": 85.3096,
+        "safety_score": 58
+    },
+    {
+        "state": "Chhattisgarh",
+        "area": "Raipur outskirts",
+        "latitude": 21.2514,
+        "longitude": 81.6296,
+        "safety_score": 53
+    }
+]
