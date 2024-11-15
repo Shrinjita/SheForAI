@@ -3,10 +3,9 @@ import folium
 import geopandas as gpd
 
 # Load crime data
-df = pd.read_csv("/content/CrimesOnWomenData.csv")
+df = pd.read_csv('/mnt/c/Users/Shrinjita Paul/Documents/GitHub/SheForAI/CrimesOnWomenData.csv')
+geojson_file = '/mnt/c/Users/Shrinjita Paul/Documents/GitHub/SheForAI/india_state_geo.json'
 
-# Load GeoJSON for Indian states
-geojson_file = '/content/india_state_geo.json'
 gdf = gpd.read_file(geojson_file)
 
 # Aggregate data by state and crime type
@@ -48,4 +47,4 @@ for crime, color in crime_types.items():
 folium.LayerControl().add_to(m)
 
 # Display map
-m.save('/content/crimes_against_women_map.html')  # Save the map to an HTML file to view it later
+m.save('/mnt/c/Users/Shrinjita Paul/Documents/GitHub/SheForAI/crimes_against_women_map.html')  # Save the map to an HTML file
