@@ -1,35 +1,68 @@
-# SheForAI
+# SheForAI - Women Safety App
 
+The app also features a "Future Advancement Map," which highlights areas with safety scores based on different factors. The future version of this app will include a search bar and other features to further improve user experience.
 
-Data Loading:
+## Project Overview
 
-The pandas library is used to load a CSV file containing crime data on women (CrimesOnWomenData.csv), which includes crime statistics by state.
-A GeoJSON file (india_state_geo.json) is used, which contains the geographical shapes of the states of India.
-Data Processing:
+This app leverages geospatial data and heatmaps to visualize the safety situation in different areas. It uses the `femaleunsafe.json` file to zoom in on specific areas and calculate a safety score, providing a clear picture of the safety levels in various regions. The app is built with a simple user interface (UI) for ease of use and is intended to provide real-time help for women.
 
-The crime data is aggregated by state using groupby('State') to sum the crime counts for each state.
-A GeoDataFrame (gdf) is loaded from the GeoJSON file to provide the geographical boundaries of each state.
-Map Initialization:
+### Current Features:
+- **Future Advancement Map**: Displays specific areas with safety scores based on the `femaleunsafe.json` file.
+  - **Columns in `femaleunsafe.json`**:
+    - `state`: Name of the state
+    - `area`: Name of the area
+    - `latitude`: Latitude of the location
+    - `longitude`: Longitude of the location
+    - `safety_score`: Safety score for the area
+  
+- **Basic UI**: Simple user interface to locate safe havens, police stations, and other safety resources nearby.
+  
+- **Heatmap Visualization**: Uses the `heatmap.py` script to generate a heatmap that visualizes the safety score data for specific regions.
 
-A base map centered on India is created using folium.Map() with a starting zoom level of 5.
-Crime Type and Color Scheme:
+- **Map Interface**: An interactive map (`map.html`) displaying the locations with safety scores and details about safe havens.
 
-A dictionary (crime_types) maps each type of crime (e.g., Rape, Kidnapping & Abduction) to a color scheme for the choropleth layer.
-Choropleth Layer Creation:
+### Future Enhancements:
+- **Search Bar**: To search for nearby safe havens, police stations, and other resources.
+- **Improved Features**: More features to help users find real-time safety information in their area.
 
-For each crime type, the corresponding data from state_crime_data is merged with the geographical data (gdf), and a choropleth layer is created for each crime type using folium.Choropleth().
-The map shows the intensity of each crime type with different color schemes representing the count of crimes in each state.
-Layer Control:
+## Project Structure
 
-A folium.LayerControl() is added to allow users to toggle between different crime type layers on the map.
-Saving the Map:
+- **`femaleunsafe.json`**: A JSON file containing location-based safety data. This file is used for the future advancement map.
+- **`heatmap.py`**: A Python script used to generate a heatmap based on the safety score data from `femaleunsafe.json`.
+- **`map.html`**: The HTML file containing the map that users can interact with to view the safety scores and location data.
+- **`SheForAI`**: Main directory containing all the resources and scripts for the app.
 
-The final map is saved as an HTML file (crimes_against_women_map.html), which can be viewed in a browser.
-Usage:
-To use this code, ensure that the CSV file and GeoJSON file are correctly formatted and accessible in the specified paths (/content/CrimesOnWomenData.csv and /content/india_state_geo.json).
-Once the map is generated, you can open the HTML file in any browser to view the interactive map, displaying crimes against women by state.
-Potential Enhancements:
-Additional Crime Data: Incorporate more crime data or other types of gender-related crimes.
-Time-based Analysis: Allow users to filter the data based on time (e.g., year-wise analysis).
-Interactive Features: Add pop-ups or tooltips to show more detailed information about each state when clicked.
-This map can be a powerful tool for policymakers, researchers, and social activists to identify regions with high crime rates and plan interventions accordingly.
+## Installation
+
+To run the app locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Shrinjita/SheForAI
+   cd SheForAI
+   ```
+
+2. Install the required dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Run the `heatmap.py` script to generate the heatmap:
+   ```bash
+   python heatmap.py
+   ```
+
+4. Open the generated `map.html` file in your browser to view the map and interact with the data.
+
+## Technologies Used
+- **Python**: For data processing and heatmap generation.
+- **Folium**: For creating interactive maps.
+- **GeoPandas**: For working with geospatial data.
+- **JSON**: For storing the location-based safety data.
+
+## Contribution
+
+Shrinjita Paul
+Ancy B John
+Harshita Das
+Monami Sen
